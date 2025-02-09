@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Script CFW - Premium Custom Scripts & Tools">
+    <meta name="author" content="Script CFW Team">
+    <title>Script CFW</title>
+
+    <!-- Link to External CSS -->
+    <link rel="stylesheet" href="styles.css">
+
+    <!-- Font Awesome for Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <!-- Loading Animation -->
+    <div class="loading-animation">
+        <div class="loading-spinner"></div>
+    </div>
+
+    <!-- Navigation Bar -->
+    <header>
+        <nav class="navbar">
+            <div class="nav-container">
+                <div class="logo">
+                    <img src="images/logo.png" alt="Script CFW Logo" style="width: 25px; height: 25px;">
+                    <span>Script CFW</span>
+                </div>
+                <div class="nav-links">
+                    <a href="index.html" class="active">Home</a>
+                    <a href="features.html" class="active">Features</a>
+                    <a href="scripts.html" class="active">Scripts</a>
+                    <a href="history.html" class="active">Our History</a>
+                </div>
+                <button class="btn btn-primary" aria-label="Get Started">Join our discord</button>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-content animate-fade-in">
+            <h1>Welcome to Script CFW</h1>
+            <p>Discover the next level of custom scripting</p>
+            <div class="hero-buttons">
+                <button class="btn btn-primary">Get Started</button>
+                <button class="btn btn-secondary" aria-label="Learn More">Learn More</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section id="features" class="features">
+        <div class="features-grid">
+            <div class="feature-card">
+                <i class="fas fa-shield-alt"></i>
+                <h3>Secure</h3>
+                <p>Top-tier security to protect your scripts</p>
+            </div>
+            <div class="feature-card">
+                <i class="fas fa-bolt"></i>
+                <h3>Fast</h3>
+                <p>Lightning-fast performance for optimal efficiency</p>
+            </div>
+            <div class="feature-card">
+                <i class="fas fa-code"></i>
+                <h3>Custom</h3>
+                <p>Custom solutions built to meet your unique needs</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>Company</h3>
+                <ul>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="careers.html">Careers</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h3>Support</h3>
+                <ul>
+                    <li><a href="documentation.html">Documentation</a></li>
+                    <li><a href="api.html">API</a></li>
+                    <li><a href="support.html">Help & Support</a></li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Link to External JavaScript -->
+    <script src="scripts.js"></script>
+</body>
+</html>
+<!-- Testimonials Section -->
+<section id="testimonials" class="testimonials">
+    <h2>What Our Users Say</h2>
+    <div class="testimonial-card">
+        <p>"Script CFW has revolutionized the way we handle custom scripts. Highly recommend!"</p>
+        <span>- Alex Johnson</span>
+    </div>
+    <div class="testimonial-card">
+        <p>"The performance and security of their scripts are unmatched. A must-have for any developer."</p>
+        <span>- Maria Garcia</span>
+    </div>
+</section>
+
+<!-- Back to Top Button -->
+<button onclick="topFunction()" id="backToTopBtn" title="Go to top">
+    <i class="fas fa-arrow-up"></i>
+</button>
+
+<script>
+    // Back to Top Button Script
+    var mybutton = document.getElementById("backToTopBtn");
+    window.onscroll = function() {scrollFunction()};
+    function scrollFunction() {
+        if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+            mybutton.style.display = "block";
+        } else {
+            mybutton.style.display = "none";
+        }
+    }
+    function topFunction() {
+        document.body.scrollTop = 0;
+        document.documentElement.scrollTop = 0;
+    }
+</script>
+
+
+<!-- In your HTML -->
+<button 
+  class="btn btn-primary" 
+  aria-label="Join Our Discord Server"
+  onclick="window.location.href = 'https://discord.gg/your-invite-code'"
+>
+  Join Our Discord
+</button>
